@@ -13,7 +13,7 @@ html {
 	}
 
 body {
-	padding-top: 2%;
+	padding-top: 3%;
 	background-color:#AC1032;
 	width: 95%;
 	height: 100%;
@@ -23,22 +23,25 @@ body {
 }
 
 .grid-container{
+	margin-left: 1%;
+	margin-bottom: 1%;
 	padding-top: 2%;
 	border-radius: 12.5%;
 	display: grid;
+	width: 98%;
 	grid-template-columns: 25% 25% 25%;
-	grid-row-gap: 20%;
-	grid-column-gap: 10%;
+	grid-column-gap: 7%;
 	background-color: #5C6769;
 	font-family: 'Comfortaa', cursive;
 }
 
 .grid-item{
+	margin-left: 18%;
 	background-color: #83A69F;
 	border: 5px solid #E3DCD2;
 	border-radius: 50%;
-	height: 80%;
-	width: 100%;
+	max-height: 80%;
+	min-width: 100%;
 	font-family: 'Comfortaa', cursive;
 	color: #333;
 	text-align: center;
@@ -56,7 +59,7 @@ h2{
 	text-align: center;
 }
 
-h4{
+h3{
 	font-family: 'Comfortaa', cursive;
 	color: #9A3324;
 	text-align: center;
