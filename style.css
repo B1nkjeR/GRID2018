@@ -8,6 +8,7 @@
 
 html {
 	background-color: #83A69F;
+	padding-left: 5%;
 	width: auto;
 	height: auto;
 	}
@@ -26,6 +27,7 @@ body {
 	margin-left: 1%;
 	margin-bottom: 1%;
 	padding-top: 2%;
+	padding-left: 1%;
 	border-radius: 12.5%;
 	display: grid;
 	width: 98%;
@@ -36,7 +38,7 @@ body {
 }
 
 .grid-item{
-	margin-left: 18%;
+	margin-left: 20%;
 	background-color: #83A69F;
 	border: 5px solid #E3DCD2;
 	border-radius: 50%;
@@ -59,21 +61,53 @@ h2{
 	text-align: center;
 }
 
-h3{
-	font-family: 'Comfortaa', cursive;
-	color: #9A3324;
-	text-align: center;
-}
-
-h6{
-	font-family: 'Comfortaa', cursive;
-	color: #FFFFFF;
-	text-align: center;
-}
-
 p{
-	font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
+  }
+}
+/* style elements concerning choose your radio station section */
+
+.dropbtn {
+    background-color: #18705E;
+    color: #AC1032;
+    font-size: 14px;
+    border: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #18705E;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ECEDF2;
+    width: 78%;
+    height: auto;
+    border: 5px solid #18705E;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #AC1032;
+    width: 80%;
+    text-decoration: none;
+		text-align: left;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #18705E;
 	color: #FFFFFF;
-	text-align: center;
-	font-size: 12pt;
-	}
+}
+
+.show {display: block;}

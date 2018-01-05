@@ -10,12 +10,27 @@
 	 <link href="style.css" rel="stylesheet">
 
 	 <script>
-	 	function RienkRadio()
-	 {
-	  var sLoc = document.getElementById('select').value;
-	  	document.location = sLoc;
-	 }
-	 </script>
+	 /* When the user clicks on the button,
+ 	toggle between hiding and showing the dropdown content */
+ 	function myFunction() {
+ 	    document.getElementById("myDropdown").classList.toggle("show");
+ 	}
+
+ 	// Close the dropdown if the user clicks outside of it
+ 	window.onclick = function(event) {
+ 	  if (!event.target.matches('.dropbtn')) {
+
+ 	    var dropdowns = document.getElementsByClassName("dropdown-content");
+ 	    var i;
+ 	    for (i = 0; i < dropdowns.length; i++) {
+ 	      var openDropdown = dropdowns[i];
+ 	      if (openDropdown.classList.contains('show')) {
+ 	        openDropdown.classList.remove('show');
+ 	      }
+ 	    }
+ 	  }
+ 	}
+ </script>
 
 <title>My Favourite Radio Stations</title>
 </head>
@@ -26,22 +41,22 @@
 <div class="grid-container">
 
 <div class="grid-item"><br>
-	<h2 style="font-size:2vw">FIP</h2>
+	<h2 style="font-size:2vw">fip</h2>
 	<a href="http://www.fipradio.fr/player" target="_blank">
 		<img src="img/fip.png" style: width="25%"/></a>
 			<p style="font-size:1vw">French Radio Station<br>
 				(World Music)</p>
 </div>
 
-<div class="grid-item"><br>
-	<h2 style="font-size:2vw">NPO1</h2>
+<div class="grid-item">
+	<h2 style="font-size:2vw">NPO<br>radio 1</h2>
 	<a href="http://radioplayer.npo.nl/radio1/" target="_blank">
 		<img src="img/npo1.jpg" style: width="25%"/></a>
 			<p style="font-size:1vw">Dutch News Radio</p>
 </div>
 
-<div class="grid-item"><br>
-	<h2 style="font-size:2vw">NPO2</h2>
+<div class="grid-item">
+	<h2 style="font-size:2vw">NPO<br>radio 2</h2>
 	<a href="http://radioplayer.npo.nl/radio2/" target="_blank">
 		<img src="img/npo2.jpg" style: width="25%"/></a>
 			<p style="font-size:1vw">Dutch Radio Station<br>
@@ -49,21 +64,21 @@
 </div>
 
 <div class="grid-item"><br>
-	<h2 style="font-size:2vw">fipGROOVE</h2>
+	<h2 style="font-size:2vw">fip Groove</h2>
 	<a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">
 		<img src="img/fipG.jpg" style: width="25%"/></a>
 			<p style="font-size:1vw">Groovy Music</p>
 </div>
 
 <div class="grid-item"><br>
-	<h2 style="font-size:2vw">fipJAZZ</h2>
+	<h2 style="font-size:2vw">fip Jazz</h2>
 	<a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">
 		<img src="img/fipJ.png" style: width="25%"/></a>
 			<p style="font-size:1vw">Just Jazz</p>
 </div>
 
 <div class="grid-item"><br>
-	<h2 style="font-size:2vw">KLARA</h2>
+	<h2 style="font-size:2vw">Klara</h2>
 	<a href="http://radioplus.be/#/klara-continuo/playlist" target="_blank">
 		<img src="img/klara.jpg" style: width="25%"/></a>
 			<p style="font-size:1vw">Classical Music</p>
@@ -74,18 +89,27 @@
 		<h4 style="font-size:1vw"><i class="fa fa-copyright">Rienk Bezema 2017</i></h4>
 </div>
 
-<div class="grid-item"><br>
-	<h1 style="font-size:1vw">Choose<br>Your Station</h1>
-	 		<select id="select" onchange="RienkRadio();">
-	 				<option>Choose a Radio Station</option>
-	 				<option value="http://www.fipradio.fr/player">FIP</option>
-	 				<option value="http://radioplayer.npo.nl/radio1/">NPO1</option>
-	 				<option value="http://radioplayer.npo.nl/radio2/">NPO2</option>
-	 				<option value="http://www.fipradio.fr/player/fip-autour-du-groove">FIP GROOVE</a></option>
-	 				<option value="http://www.fipradio.fr/player/fip-autour-du-jazz">FIP JAZZ</option>
-	 				<option value="http://radioplus.be/#/klara-continuo/playlist">KLARA</option>
-	 		</select>
-		</div>
+<div class="grid-item"><br><br><br><br>
+	<h2 style="font-size:2vw">CHOOSE YOUR RADIO STATION</h2>
+	<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">Choose a Station</button>
+	  <div id="myDropdown" class="dropdown-content">
+	<a href="http://radioplayer.npo.nl/radio1/" target="_blank">NPO1</a>
+	<a href="http://radioplayer.npo.nl/radio2/" target="_blank">NPO2</a>
+	<a href="http://radioplayer.npo.nl/3fm/" target="_blank">3FM</a>
+	<a href="http://radioplayer.npo.nl/radio4/" target="_blank">NPO4</a>
+	<a href="http://radioplayer.npo.nl/radio5/" target="_blank">NPO5</a>
+	<a href="http://radioplayer.npo.nl/radio6/" target="_blank">NPO6</a>
+	<a href="http://www.fipradio.fr/player" target="_blank">FIP</a>
+	<a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">FIP GROOVE</a>
+	<a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">FIP JAZZ</a>
+	<a href="https://klara.be/" target="_blank">KLARA</a>
+	<a href="http://sublimefm.nl/" target="_blank">SUBLIMEFM</a>
+	<a href="http://www.klassikradio.de/webplayer?channel=live" target="_blank">KLASSIKRADIO</a>
+	  </div>
+	</div>
+</div>
+
 
 		<div class="grid-item"><br>
 			<br><h2 style="font-size:2vw">NDR kultur</h2>
