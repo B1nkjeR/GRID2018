@@ -8,15 +8,16 @@
 
 html {
 	background-color: #83A69F;
-	padding-left: 5%;
+	/* padding-left: 1%; */
 	width: auto;
 	height: auto;
+  align-content: center;
 	}
 
 body {
-	padding-top: 3%;
+	padding-top: 2%;
 	background-color:#AC1032;
-	width: 95%;
+	width: 98%;
 	height: 100%;
 	font-family: 'Comfortaa', cursive;
 	align-content: center;
@@ -25,12 +26,13 @@ body {
 
 .grid-container{
 	margin-left: 1%;
+  margin-right: 1%;
 	margin-bottom: 1%;
 	padding-top: 2%;
 	padding-left: 1%;
 	border-radius: 12.5%;
-	display: grid;
-	width: 98%;
+	display: inline-grid;
+	width: 97%;
 	grid-template-columns: 25% 25% 25%;
 	grid-column-gap: 7%;
 	background-color: #5C6769;
@@ -65,16 +67,17 @@ p{
   font-family: 'Comfortaa', cursive;
   color: #FFFFFF;
   text-align: center;
-  font-size: 12pt;
+  font-size: 11pt;
   }
-}
+
 /* style elements concerning choose your radio station section */
 
 .dropbtn {
     background-color: #18705E;
-    color: #AC1032;
-    font-size: 14px;
+    color: #FFFFFF;
+    font-size: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -90,7 +93,7 @@ p{
     display: none;
     position: absolute;
     background-color: #ECEDF2;
-    width: 78%;
+    width: 80%;
     height: auto;
     border: 5px solid #18705E;
     overflow: auto;
@@ -111,3 +114,9 @@ p{
 }
 
 .show {display: block;}
+
+/*Use a media query to add a break point at 800px:*/
+@media (max-width:800px) {
+  .grid-container, .grid-item {
+    width:98%;/*The width is 100%, when the viewport is 800px or smaller*/
+  }
