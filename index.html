@@ -2,119 +2,121 @@
 <html lang="en/us/nl">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-	<script src="https://use.fontawesome.com/6cf3c4b1ed.js"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <script src="https://use.fontawesome.com/6cf3c4b1ed.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-	<script>
-		/* When the user clicks on the button,
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-			if (!event.target.matches('.dropbtn')) {
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
-					}
-				}
-			}
-		}
-	</script>
+  <script>
+    /* When the user clicks on the button,
+                            		toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById(myDropdown).classList.toggle(show);
+    }
 
-	<title>My Favourite Radio Stations</title>
+    // Close the dropdown if the user clicks outside of it
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(dropdown - content);
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    };
+  </script>
+
+  <title>My Favourite Radio Stations</title>
 </head>
 
 <body>
-	<h1 style="font-size:5vw">My Favourite Radio Stations</h1>
+  <h1 style="font-size:5vw">My Favourite Radio Stations</h1>
 
-	<!-- start of the grid section -->
-	<div class="grid-container">
+  <!-- start of the grid section -->
+  <div class="grid-container">
 
-		<div class="grid-item"><br><br>
-			<h3>fip</H3>
-			<a href="http://www.fipradio.fr/player" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>fip</h3>
+      <a href="http://www.fipradio.fr/player" target="_blank">
     <img src="img/fip.png"/></a>
-			<p>World Music</p>
-		</div>
+      <p>World Music</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>Radio 1</H3>
-			<a href="http://radioplayer.npo.nl/radio1/" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>Radio 1</h3>
+      <a href="http://radioplayer.npo.nl/radio1/" target="_blank">
     <img src="img/npo1.jpg"/></a>
-			<p>News Radio</p>
-		</div>
+      <p>News Radio</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>Radio 2</H3>
-			<a href="http://radioplayer.npo.nl/radio2/" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>Radio 2</h3>
+      <a href="http://radioplayer.npo.nl/radio2/" target="_blank">
     <img src="img/npo2.jpg"/></a>
-			<p>Music Station</p>
-		</div>
+      <p>Music Station</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>fip Groove</H3>
-			<a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>fip Groove</h3>
+      <a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">
     <img src="img/fipG.jpg"/></a>
-			<p>Groovy Music</p>
-		</div>
+      <p>Groovy Music</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>fip Jazz</H3>
-			<a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>fip Jazz</h3>
+      <a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">
     <img src="img/fipJ.png"/></a>
-			<p>Just Jazz</p>
-		</div>
+      <p>Just Jazz</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>Klara</H3>
-			<a href="http://radioplus.be/#/klara-continuo/playlist" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>Klara</h3>
+      <a href="http://radioplus.be/#/klara-continuo/playlist" target="_blank">
     <img src="img/klara.jpg"/></a>
-			<p>Classical Music</p>
-		</div>
+      <p>Classical Music</p>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<br><img src="img/rb.jpg" />
-			<h5><i class="fa fa-copyright">Rienk Bezema 2017</i></h5>
-		</div>
+    <div class="grid-item"><br><br>
+      <br><img src="img/rb.jpg" />
+      <h5><i class="fa fa-copyright">Rienk Bezema 2017</i></h5>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<h3>Choose a <br>Radio Station</h3>
-			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Choose a Station</button>
-				<div id="myDropdown" class="dropdown-content">
-					<a href="http://radioplayer.npo.nl/radio1/" target="_blank">NPO1</a>
-					<a href="http://radioplayer.npo.nl/radio2/" target="_blank">NPO2</a>
-					<a href="http://radioplayer.npo.nl/3fm/" target="_blank">3FM</a>
-					<a href="http://radioplayer.npo.nl/radio4/" target="_blank">NPO4</a>
-					<a href="http://radioplayer.npo.nl/radio5/" target="_blank">NPO5</a>
-					<a href="http://radioplayer.npo.nl/radio6/" target="_blank">NPO6</a>
-					<a href="http://www.fipradio.fr/player" target="_blank">FIP</a>
-					<a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">FIP GROOVE</a>
-					<a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">FIP JAZZ</a>
-					<a href="https://klara.be/" target="_blank">KLARA</a>
-					<a href="http://sublimefm.nl/" target="_blank">SUBLIMEFM</a>
-					<a href="http://www.klassikradio.de/webplayer?channel=live" target="_blank">KLASSIKRADIO</a>
-				</div>
-			</div>
-		</div>
+    <div class="grid-item"><br><br>
+      <h3>Choose a <br>Radio Station</h3>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Choose a Station</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="http://radioplayer.npo.nl/radio1/" target="_blank">NPO1</a>
+          <a href="http://radioplayer.npo.nl/radio2/" target="_blank">NPO2</a>
+          <a href="http://radioplayer.npo.nl/3fm/" target="_blank">3FM</a>
+          <a href="http://radioplayer.npo.nl/radio4/" target="_blank">NPO4</a>
+          <a href="http://radioplayer.npo.nl/radio5/" target="_blank">NPO5</a>
+          <a href="http://radioplayer.npo.nl/radio6/" target="_blank">NPO6</a>
+          <a href="http://www.fipradio.fr/player" target="_blank">FIP</a>
+          <a href="http://www.fipradio.fr/player/fip-autour-du-groove" target="_blank">FIP GROOVE</a>
+          <a href="http://www.fipradio.fr/player/fip-autour-du-jazz" target="_blank">FIP JAZZ</a>
+          <a href="https://klara.be/" target="_blank">KLARA</a>
+          <a href="http://sublimefm.nl/" target="_blank">SUBLIMEFM</a>
+          <a href="http://www.klassikradio.de/webplayer?channel=live" target="_blank">KLASSIKRADIO</a>
+        </div>
+      </div>
+    </div>
 
-		<div class="grid-item"><br><br>
-			<H3>NDR kultur</H3>
-			<a href="https://www.ndr.de/ndrkultur/epg/stationndrkultur102-radioplayer.html" target="_blank">
+    <div class="grid-item"><br><br>
+      <h3>NDR kultur</h3>
+      <a href="https://www.ndr.de/ndrkultur/epg/stationndrkultur102-radioplayer.html" target="_blank">
     <img src="img/ndr.png"/></a>
-			<p>Classical Music</p>
-		</div>
+      <p>Classical Music</p>
+    </div>
 
-	</div>
-	<!-- end of the grid section -->
+  </div>
+  <!-- end of the grid section -->
 
 </body>
 

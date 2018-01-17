@@ -1,11 +1,11 @@
 * {
- margin-top: 20px;
- margin-bottom: 20px;
- box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 html {
- background-color: #83a69f;
+  background-color: #83a69f;
 }
 
 body {
@@ -21,174 +21,179 @@ body {
 }
 
 .grid-container {
- margin-left: 1%;
- margin-right: 1%;
- margin-bottom: 1%;
- padding-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding-top: 2%;
   padding-bottom: 2%;
- border-radius: 12.5%;
- display: inline-grid;
- width: 97%;
- grid-template-columns: 25% 25% 25%;
- grid-column-gap: 7%;
- background-color: #5c6769;
- font-family: "Comfortaa", cursive;
+  border-radius: 12.5%;
+  display: inline-grid;
+  width: 97%;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 7%;
+  background-color: #5c6769;
+  font-family: "Comfortaa", cursive;
 }
 
 .grid-item {
- margin-left: 20%;
- background-color: #83a69f;
- border: 5px solid #e3dcd2;
- border-radius: 100%;
- padding: 1em;
- margin-top: 0px !important;
- margin-bottom: 0px !important;
- width: 100%;
- height: 100%;
- font-family: "Comfortaa", cursive;
- color: #333;
- text-align: center;
+  margin-left: 20%;
+  background-color: #83a69f;
+  border: 5px solid #e3dcd2;
+  border-radius: 100%;
+  padding: 1em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  width: 100%;
+  height: 100%;
+  font-family: "Comfortaa", cursive;
+  color: #333;
+  text-align: center;
 }
 
 h1 {
- font-family: "Comfortaa", cursive;
- color: #e3dcd2;
- text-align: center;
+  font-family: "Comfortaa", cursive;
+  color: #e3dcd2;
+  text-align: center;
 }
 
 h3 {
- font-family: "Comfortaa", cursive;
- color: #9a3324;
- text-align: center;
+  font-family: "Comfortaa", cursive;
+  color: #9a3324;
+  text-align: center;
 }
 
 p {
- font-family: "Comfortaa", cursive;
- color: #ffffff;
- text-align: center;
- font-size: 11pt;
+  font-family: "Comfortaa", cursive;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11pt;
 }
 
 /* style elements concerning choose your radio station section */
 
 .dropbtn {
- background-color: #18705e;
- color: #ffffff;
- font-size: 16px;
- border: none;
- cursor: pointer;
+  background-color: #18705e;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.dropbtn:hover,
-.dropbtn:focus {
- background-color: #18705e;
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #18705e;
 }
 
 .dropdown {
- position: relative;
- display: block;
+  position: relative;
+  display: block;
 }
 
 .dropdown-content {
- display: none;
- position: absolute;
- background-color: #ecedf2;
- width: 80%;
- height: auto;
- border: 5px solid #18705e;
- overflow: auto;
- z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #ecedf2;
+  width: 80%;
+  height: auto;
+  border: 5px solid #18705e;
+  overflow: auto;
+  z-index: 1;
 }
 
 .dropdown-content a {
- color: #ac1032;
- font-size: 15px;
- width: 80%;
- padding-left: 15px;
- text-decoration: none;
- text-align: left;
- display: block;
+  color: #ac1032;
+  font-size: 15px;
+  width: 80%;
+  padding-left: 15px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
 }
 
 .dropdown a:hover {
- background-color: #18705e;
- color: #ffffff;
+  background-color: #18705e;
+  color: #ffffff;
 }
 
 .show {
- display: block;
+  display: block;
 }
 
 img {
- width: 5rem;
+  width: 5rem;
 }
 
 @media screen and (max-width: 700px) {
- html {
-  min-width: 100%;
- }
+  html {
+    min-width: 100%;
+  }
 }
+
 @media screen and (max-width: 400px) {
- html {
-  min-width: 100%;
- }
+  html {
+    min-width: 100%;
+  }
 }
+
 @media screen and (max-width: 700px) {
- body {
-  padding-top: 2%;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  background-color: #ac1032;
-  height: auto;
-  font-family: "Comfortaa", cursive;
-  align-content: center;
-  border-radius: 12.5%;
-  min-width: 99%;
- }
+  body {
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    background-color: #ac1032;
+    height: auto;
+    font-family: "Comfortaa", cursive;
+    align-content: center;
+    border-radius: 12.5%;
+    min-width: 99%;
+  }
 }
+
 @media screen and (max-width: 400px) {
- body {
-  padding-top: 2%;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  background-color: #ac1032;
-  min-width: 99%;
-  height: auto;
-  font-family: "Comfortaa", cursive;
-  align-content: center;
-  border-radius: 12.5%;
- }
+  body {
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    background-color: #ac1032;
+    min-width: 99%;
+    height: auto;
+    font-family: "Comfortaa", cursive;
+    align-content: center;
+    border-radius: 12.5%;
+  }
 }
+
 @media screen and (max-width: 700px) {
- .grid-container {
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  padding-top: 2%;
-  border-radius: 12.5%;
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-column-gap: 7%;
-  background-color: #5c6769;
-  font-family: "Comfortaa", cursive;
-  min-width: 98%;
- }
+  .grid-container {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-top: 2%;
+    border-radius: 12.5%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 7%;
+    background-color: #5c6769;
+    font-family: "Comfortaa", cursive;
+    min-width: 98%;
+  }
 }
+
 @media screen and (max-width: 400px) {
- .grid-container {
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  padding-top: 2%;
-  border-radius: 12.5%;
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-column-gap: 7%;
-  background-color: #5c6769;
-  font-family: "Comfortaa", cursive;
-  min-width: 98%;
- }
+  .grid-container {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-top: 2%;
+    border-radius: 12.5%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-column-gap: 7%;
+    background-color: #5c6769;
+    font-family: "Comfortaa", cursive;
+    min-width: 98%;
+  }
 }
+
 /* @media screen and (max-width:700px){
   .grid-item{
     margin-left: 20%;
@@ -215,59 +220,59 @@ img {
     min-width: 100%;
   }
 } */
+
 @media screen and (max-width: 700px) {
- img {
-  width: auto;
- }
+  img {
+    width: auto;
+  }
 }
+
 @media screen and (max-width: 400px) {
- img {
-  width: auto;
- }
+  img {
+    width: auto;
+  }
 }
+
 @media screen and (max-width: 700px) {
- h1 {
-  font-family: "Comfortaa", cursive;
-  color: #e3dcd2;
-  text-align: center;
-  font-size: 50%;
- }
-
- h3 {
-  font-family: "Comfortaa", cursive;
-  color: #9a3324;
-  text-align: center;
-  font-size: 50%;
- }
-
- p {
-  font-family: "Comfortaa", cursive;
-  color: #ffffff;
-  text-align: center;
-  font-size: 50%;
- }
- footer {
-  font-size: 50%;
- }
+  h1 {
+    font-family: "Comfortaa", cursive;
+    color: #e3dcd2;
+    text-align: center;
+    font-size: 50%;
+  }
+  h3 {
+    font-family: "Comfortaa", cursive;
+    color: #9a3324;
+    text-align: center;
+    font-size: 50%;
+  }
+  p {
+    font-family: "Comfortaa", cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 50%;
+  }
+  footer {
+    font-size: 50%;
+  }
 }
+
 @media screen and (max-width: 400px) {
- h1 {
-  font-family: "Comfortaa", cursive;
-  color: #e3dcd2;
-  text-align: center;
-  font-size: 25%;
- }
-
- h3 {
-  font-family: "Comfortaa", cursive;
-  color: #9a3324;
-  text-align: center;
-  font-size: 25%;
- }
-
- p {
-  font-family: "Comfortaa", cursive;
-  color: #ffffff;
-  text-align: center;
-  font-size: 25%;
- }
+  h1 {
+    font-family: "Comfortaa", cursive;
+    color: #e3dcd2;
+    text-align: center;
+    font-size: 25%;
+  }
+  h3 {
+    font-family: "Comfortaa", cursive;
+    color: #9a3324;
+    text-align: center;
+    font-size: 25%;
+  }
+  p {
+    font-family: "Comfortaa", cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25%;
+  }
